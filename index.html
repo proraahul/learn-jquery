@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQUERY</title>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+    <style>
+      .text2 {
+        background-color: tomato;
+        font-size: 1.5em;
+        padding: 1em;
+        color: #fff;
+        width: 10em;
+        text-align: center;
+      }
+      .test {
+        width: 30%;
+        background-color: tomato;
+        height: auto;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 20px;
+      }
+      #box1{
+        border: 1px solid black;
+        height: 75px;
+        width: 100px;
+        background-color: yellow;
+        position: relative;
+      }
+      #box2{
+        border: 1px solid black;
+        height: 75px;
+        width: 100px;
+        background-color: violet;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- !Window-Event -->
+    <img
+      src="https://images.pexels.com/photos/17848470/pexels-photo-17848470/free-photo-of-couple-sitting-on-wall-over-town-and-kissing.jpeg?auto=compress&cs=tinysrgb&w=150&h=auto&dpr=1"
+      alt=""
+      id="img1"
+    />
+    <p id="mic">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+      excepturi, aliquam laborum laboriosam temporibus, impedit fuga facilis
+      dicta nemo placeat quaerat molestias deleniti rem? Perferendis autem
+      architecto alias qui perspiciatis.
+    </p>
+
+    <h1></h1>
+    <h2></h2>
+
+    <p class="text1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo eos
+      magnam mollitia, asperiores natus esse temporibus quis aliquid inventore.
+    </p>
+    <p id="text"></p>
+
+    <h4 class="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore id
+      quasi atque autem, excepturi laborum totam neque quae nesciunt!
+    </h4>
+    <button id="click2">Click2</button>
+
+    <!-- !show, hide, click, doubleclick Evenets -->
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+
+    <button id="click1">click</button>
+
+    <!-- !Get value from input tag using jquery -->
+    <br />
+    <br />
+    <input type="text" id="input1" placeholder="Name" />
+    <h5 id="text3"></h5>
+    <button id="click3">show value</button>
+
+    <!-- !set value -->
+
+    <h5 id="text4">Good Morning Everyone How Are You All ?</h5>
+    <input type="file" id="input2" />
+    <button id="click4">Set value</button>
+
+    <!-- !Clone in Jquery -->
+    <h3 id="text5">This is Text</h3>
+    <img
+      src="https://images.pexels.com/photos/17739051/pexels-photo-17739051/free-photo-of-woman-with-dog-on-cliff.jpeg?auto=compress&cs=tinysrgb&w=150&h=auto&dpr=1"
+      alt=""
+      id="img2"
+    />
+    <button id="click5">Clone</button>
+
+    <!-- !toggle css jquery -->
+
+    <h3 id="text6">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem id ipsum
+      numquam possimus magnam atque commodi debitis? Excepturi, corporis facere?
+    </h3>
+    <button id="click6">Click toggle</button>
+
+    <!-- !chaining method in jquery -->
+
+    <h3 id="text7">
+      We have found Paragraphs and associated modules to be a very successful
+      recipe. Our clients love the plugability and extensibility of the system.
+      if they need something new then we can build it.
+    </h3>
+    <button id="click7">Click7</button>
+
+    <!-- slide event -->
+    <div class="card" id="card" style="width: 18rem;">
+        <img src="https://www.thecookierookie.com/wp-content/uploads/2023/04/featured-stovetop-burgers-recipe.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <a class="btn btn-primary mt-2" id="click8" >Go somewhere</a>
+
+      <!-- fade Event -->
+      <div class="card" id="card2" style="width: 18rem;">
+        <img src="https://www.thecookierookie.com/wp-content/uploads/2023/04/featured-stovetop-burgers-recipe.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <a class="btn btn-primary mt-2" id="click9" >Go somewhere</a>
+
+      <!-- ! append, prepend, before, after -->
+      <h3 id="text8" class="text-center">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, animi?
+      </h3>
+      <button id="click10" class="m-auto">Click-10</button>
+
+      <!-- ! empty remove -->
+      <h3 id="text9">this is empty</h3>
+      <h3 id="text10">this is remove</h3>
+      <button id="click11">click11</button>
+
+      <!-- ! animation -->
+      <div id="box1"></div>
+      <div id="box2"></div>
+
+      <button id="start">start</button>
+      <button id="stop">Stop</button>
+
+
+
+
+
+<!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./code.jquery.com_jquery-3.7.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("h1").html("Hello Duniya!");
+        $("h2").html("How are you");
+      });
+
+      $(document).ready(function () {
+        $(".text").html("thats how we call Class");
+        $("#text").html("thats how we call Id");
+      });
+
+      $(document).ready(function () {
+        //show() and Hide();
+        $("#click1").click(function () {
+          $(".text1").hide(3000);
+        });
+
+        $("#click1").dblclick(function () {
+          $(".text1").show(3000);
+        });
+      });
+
+      $(document).ready(function(){
+        $("p").click(function(){
+     $(this).hide();
+    });
+});
+
+      /* how to put css class to html tag by using jquery */
+
+      $(document).ready(function () {
+        $("#click1").click(function () {
+          $(".text1").css({
+            backgroundColor: "yellow",
+            padding: "10px",
+            fontSize: "25px",
+          });
+        });
+      });
+
+      $(document).ready(function () {
+        $("#click2").click(function () {
+          $("h4").addClass("text2");
+        });
+
+        $("#click2").dblclick(function () {
+          $("h4").removeClass("text2");
+        });
+      });
+
+      // get value form input
+      $(document).ready(function () {
+        $("#click3").click(function () {
+          let x = $("#input1").val();
+          $("#text3").html(x);
+        });
+      });
+
+      //  set value in jquery and even attribute
+      $(document).ready(function () {
+        $("#click4").click(function () {
+          $("#text4").html(
+            "<p>Sorry for late response good morning to as well</p>"
+          );
+          $("#input2").attr("type", "date");
+        });
+      });
+
+      //   window event
+      $(document).ready(function () {
+        $(window).resize(function () {
+          $("#img1").hide(2500);
+        });
+      });
+
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          $("#mic").hide(3500);
+        });
+      });
+
+      //   clone
+      $(document).ready(function () {
+        $("#click5").click(function () {
+          var i = $("#img2").clone();
+          var t = $("#text5").clone();
+          $("#click5").before(i, t);
+        });
+      });
+
+      //   toggle
+      $(document).ready(function () {
+        $("#click6").click(function () {
+          $("#text6").toggleClass("test");
+        });
+      });
+
+      //  chaining method in jquery
+
+      $(document).ready(function () {
+        $("#click7").click(function () {
+          $("#text7")
+            .hide(2500)
+            .show(3500)
+            .addClass("test")
+            .html("<p>this is how we do chain method</p>");
+        });
+      });
+
+    //    slide event
+    $(document).ready(function(){
+        $('#click8').click(function(){
+            // $('#card').slideUp(1500);
+            $('#card').slideToggle(2500);
+        })
+        // $('#click8').dblclick(function(){
+        //     $('#card').slideDown(1500);
+        // })
+    })
+
+    // fade event
+    // $(document).ready(function(){
+    //     $('#click9').click(function(){
+    //         $('#card2').fadeOut(2500);
+    //     })
+    // })
+    // $(document).ready(function(){
+    //     $('#click9').dblclick(function(){
+    //         $('#card2').fadeIn(2500);
+    //     }) 
+    // })
+
+    // $(document).ready(function(){
+    //     $('#click9').click(function(){
+    //         $('#card2').fadeTo(1500, 0.5);
+    //     })
+    // })
+
+    $(document).ready(function(){
+        $('#click9').click(function(){
+            $('#card2').fadeToggle(1500);
+        })
+    })
+
+    // append, prepend, before, after
+    $(document).ready(function(){
+        $('#click10').click(function(){
+            $('#text8').append('Append');
+            $('#text8').prepend('Prepend');
+            $('#text8').before('before');
+            $('#text8').after('after');
+        })
+    })
+
+    // empty remove
+    $(document).ready(function(){
+        $('#click11').click(function(){
+            $('#text9').empty();
+            $('#text10').remove();
+        })
+    })
+
+    // animation
+    $(document).ready(function(){
+        $('#start').click(function(){
+            $('#box1').animate({'left' : '1000px'}, 5000);
+            $('#box2').animate({'left': '800px'}, 7000);            
+        })
+    });
+
+    $(document).ready(function(){
+        $('#stop').click(function(){
+            $('#box1').stop();
+            $('#box2').stop();       
+        })
+    });
+
+    </script>
+  </body>
+</html>
